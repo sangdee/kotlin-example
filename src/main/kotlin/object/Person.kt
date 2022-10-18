@@ -9,7 +9,6 @@ fun main() {
         override fun fly() {
             println("flty")
         }
-
     })
 }
 
