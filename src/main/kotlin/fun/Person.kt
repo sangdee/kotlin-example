@@ -1,5 +1,7 @@
 package `fun`
 
+import classes.PersonDto
+
 data class Person(
     val name: String,
     val age: Int
@@ -24,6 +26,13 @@ fun main() {
     }
     val value4 = person.apply {
         this.age
+    }
+
+    val personDto = with(person) {
+        PersonDto(
+            name = name,
+            age = age,
+        )
     }
 }
 
